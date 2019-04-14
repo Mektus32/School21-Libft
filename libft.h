@@ -6,7 +6,7 @@
 /*   By: ojessi <ojessi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/04 18:18:09 by ojessi            #+#    #+#             */
-/*   Updated: 2019/04/09 21:50:13 by ojessi           ###   ########.fr       */
+/*   Updated: 2019/04/14 13:29:58 by ojessi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,5 +90,6 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int					ft_isspace(int ch);
 int					ft_count_words(char const *s);
 void				ft_lstaddback(t_list **alst, t_list *new);
+void				ft_setbackground_fd(int backg, int fd);
 
 #endif

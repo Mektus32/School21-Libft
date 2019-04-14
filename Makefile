@@ -6,7 +6,7 @@
 #    By: ojessi <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/04 15:28:54 by ojessi            #+#    #+#              #
-#    Updated: 2019/04/11 16:09:35 by ojessi           ###   ########.fr        #
+#    Updated: 2019/04/14 13:33:19 by ojessi           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,7 +73,8 @@ SRC = ft_atoi.c \
       ft_strrchr.c \
       ft_strtrim.c \
       ft_tolower.c \
-      ft_toupper.c
+      ft_toupper.c \
+	  ft_setbackground_fd.c
 HEAD = libft.h 
 
 all: $(NAME)
