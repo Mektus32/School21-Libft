@@ -17,7 +17,7 @@ t_list	*ft_list_push_back(t_list **begin_list, void *str, int elem)
 	t_list	*list;
 
 	if (!begin_list)
-		return ;
+		return (NULL);
 	list = *begin_list;
 	if (!list)
 		list = ft_list_add(str, elem);
@@ -26,6 +26,7 @@ t_list	*ft_list_push_back(t_list **begin_list, void *str, int elem)
 		while (list->next)
 			list = list->next;
 		list->next = ft_list_add(str, elem);
+		list = list->next;
 	}
 	return (list);
 }
