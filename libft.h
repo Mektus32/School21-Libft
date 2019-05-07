@@ -6,7 +6,7 @@
 /*   By: ojessi <ojessi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/04 18:18:09 by ojessi            #+#    #+#             */
-/*   Updated: 2019/05/06 21:27:46 by ojessi           ###   ########.fr       */
+/*   Updated: 2019/05/07 14:38:01 by ojessi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,13 @@ void				ft_lstaddback(t_list **alst, t_list *new);
 void				ft_setbackground_fd(int backg, int fd);
 char				*ft_free_join(char *new, char *src);
 t_list				*ft_list_add(void *str, int elem);
-t_list				*ft_list_push_back(t_list **begin_list, void *str, int elem);
+t_list				*ft_list_push_back(t_list **begin_list,
+		void *str, int elem);
 t_list				*ft_list_foreach_if(t_list *begin_list, int elem);
+void				ft_abs(int *nbr);
+void				ft_absf(float *nbr);
+float				ft_truncf(float nbr);
+int					ft_pow(int nbr, int power);
+void				ft_putfnbr(float fnbr, size_t quantity);
 
 #endif
