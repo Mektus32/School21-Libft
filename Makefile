@@ -83,7 +83,13 @@ SRC = ft_atoi.c \
 	  ft_absf.c \
 	  ft_truncf.c \
 	  ft_pow.c \
-	  ft_putfnbr.c
+      ft_free_strjoin_duo.c \
+      ft_free_strjoin_rev.c \
+      ft_ftoa.c \
+      ft_ltoa_base.c \
+      ft_ltoa.c \
+      ft_ultoa_base.c \
+      ft_ultoa.c
 HEAD = libft.h 
 all: $(NAME)
 

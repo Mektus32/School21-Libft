@@ -6,7 +6,7 @@
 /*   By: ojessi <ojessi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/04 18:18:09 by ojessi            #+#    #+#             */
-/*   Updated: 2019/05/07 14:38:01 by ojessi           ###   ########.fr       */
+/*   Updated: 2019/06/02 14:09:47 by ojessi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <limits.h>
 
 typedef struct		s_list
 {
@@ -100,6 +101,12 @@ void				ft_abs(int *nbr);
 void				ft_absf(float *nbr);
 float				ft_truncf(float nbr);
 int					ft_pow(int nbr, int power);
-void				ft_putfnbr(float fnbr, size_t quantity);
+char				*ft_free_strjoin_duo(char const *s1, char const *s2);
+char				*ft_free_strjoin_rev(char *src, char *new);
+char    			*ft_ftoa(long double nbr);
+char				*ft_ltoa_base(long n, int base);
+char				*ft_ltoa(long n);
+char 				*ft_ultoa_base(unsigned long n, int base);
+char    			*ft_ultoa(unsigned long n);
 
 #endif
