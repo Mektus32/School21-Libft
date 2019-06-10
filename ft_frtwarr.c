@@ -1,24 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_strjoin_rev.c                              :+:      :+:    :+:   */
+/*   ft_frtwarr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ojessi <ojessi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/15 19:21:34 by ojessi            #+#    #+#             */
-/*   Updated: 2019/06/09 22:05:30 by ojessi           ###   ########.fr       */
+/*   Created: 2019/06/04 09:25:06 by ojessi            #+#    #+#             */
+/*   Updated: 2019/06/10 17:05:41 by ojessi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_free_strjoin_rev(char *src, char *new)
+void	ft_frtwarr(void **arr, int size)
 {
-	char	*tmp;
+	int		i;
 
-	if (!(tmp = ft_strjoin(src, new)))
-		return (NULL);
-	free(new);
-	new = NULL;
-	return (tmp);
+	i = -1;
+	while (++i < size && arr[i] != NULL)
+		free(arr[i]);
+	free(arr);
 }

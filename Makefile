@@ -6,7 +6,7 @@
 #    By: ojessi <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/04 15:28:54 by ojessi            #+#    #+#              #
-#    Updated: 2019/05/07 14:37:20 by ojessi           ###   ########.fr        #
+#    Updated: 2019/06/07 11:08:01 by ojessi           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -89,7 +89,10 @@ SRC = ft_atoi.c \
       ft_ltoa_base.c \
       ft_ltoa.c \
       ft_ultoa_base.c \
-      ft_ultoa.c
+      ft_ultoa.c \
+	  ft_frtwarr.c \
+	  get_next_line.c \
+      ft_list_remove_free_if.c
 HEAD = libft.h 
 all: $(NAME)
 
